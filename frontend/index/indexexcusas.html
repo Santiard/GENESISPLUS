@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styleexcusas.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Subir Excusa Académica</title>
+    
+    <div class="banner">
+        <img src="IMAGENES/LOGOUDES.png" alt="">
+        <h1>GENESIS PLUS</h1>
+        <h3>Sistema de gestión de estudiantes</h3>
+        <h4>Cúcuta Semestre 2024B</h4>
+    </div>
+
+</head>
+<body>
+
+    <ul class="menu">
+        <li><a href="indexhome.html"><i class='bx bxs-home-alt-2'></i></a></li>
+        <li><a href="#">Transmites academicos</a></li>
+        <li><a href="#">Record de notas</a></li>
+        <li><a href="#">Plan de estudio</a></li>
+        <li><a href="#">Matricula</a></li>
+        <li><a href="indexhorario.html">Horario</a></li>
+        <li ><a href="indexnotasyasistencias.html">Notas</a></li>
+        <li><a href="indexconfiguracion.html">Configuracion</a></li>
+        <li><a href="#" onclick="mostrarNotificaciones()"><i class='bx bx-bell' ></i></a></li>
+        <li class="user"><a href="indexperfil.html"><i class='bx bxs-user' >NOMBRE</i></a></li>
+    </ul>
+
+    <div class="container">
+        <h2>Subir Excusa Académica</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="tipoExcusa">Tipo de Excusa:</label>
+                <select id="tipoExcusa" name="tipoExcusa" required>
+                    <option value="" disabled selected>Selecciona el tipo de excusa</option>
+                    <option value="salud">Excusa médica</option>
+                    <option value="familiar">Motivo familiar</option>
+                    <option value="deporte">Competencia deportiva</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fechaFalta">Fecha de la falta:</label>
+                <input type="date" id="fechaFalta" name="fechaFalta" required>
+            </div>
+            <div class="form-group">
+                <label for="archivoExcusa">Cargar documento de excusa (PDF o imagen):</label>
+                <input type="file" id="archivoExcusa" name="archivoExcusa" accept=".pdf, .jpg, .jpeg, .png" required>
+            </div>
+            <button type="submit">Enviar Excusa</button>
+        </form>
+
+        <div class="tabla">
+        <h2>Excusas Enviadas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de Excusa</th>
+                    <th>Fecha de la Falta</th>
+                    <th>Documento</th>
+                    <th>Aprobado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Excusa médica</td>
+                    <td>2024-09-20</td>
+                    <td><a href="#">Ver Documento</a></td>
+                    <td><span class="status-approved">Aprobado</span></td>
+                </tr>
+                <tr>
+                    <td>Motivo familiar</td>
+                    <td>2024-09-18</td>
+                    <td><a href="#">Ver Documento</a></td>
+                    <td><span class="status-rejected">Rechazado</span></td>
+                </tr>
+                <tr>
+                    <td>Competencia deportiva</td>
+                    <td>2024-09-15</td>
+                    <td><a href="#">Ver Documento</a></td>
+                    <td><span class="status-approved">Aprobado</span></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <div id="panelNotificaciones" class="notificaciones">
+        <button class="close-btn" onclick="cerrarNotificaciones()">×</button>
+        <h3>Notificaciones</h3>
+        <div class="notificacion notificacion-importante">
+            <p><strong>Importante:</strong> Recuerda subir todos los documentos requeridos antes del 15 de octubre.</p>
+        </div>
+        <div class="notificacion notificacion-normal">
+            <p>Tu solicitud de descuento por excelencia académica ha sido aprobada.</p>
+        </div>
+        <div class="notificacion notificacion-alerta">
+            <p><strong>Alerta:</strong> La solicitud de descuento por situación financiera ha sido rechazada.</p>
+        </div>
+    </div>
+
+
+</body>
+
+<footer>
+    <div class="legal"></div>
+    <p>Universidad de Santander - Sistemas de información</p>
+    <p>Todos los derechos reservados © 2016</p>
+    <p>Institución de Educación Superior sujeta a la inspección y vigilancia del Ministerio de Educación Nacional  </p>
+</footer>
+
+<script>
+    function mostrarNotificaciones() {
+        var panel = document.getElementById('panelNotificaciones');
+        panel.classList.toggle('open');
+    }   
+
+    function cerrarNotificaciones() {
+        var panel = document.getElementById('panelNotificaciones');
+        panel.classList.remove('open');
+    }
+</script>
+
+</html>

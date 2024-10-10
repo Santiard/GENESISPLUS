@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styledescuentos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Solicitud de Descuento Académico</title>
+    
+    <div class="banner">
+        <img src="IMAGENES/LOGOUDES.png" alt="">
+        <h1>GENESIS PLUS</h1>
+        <h3>Sistema de gestión de estudiantes</h3>
+        <h4>Cúcuta Semestre 2024B</h4>
+    </div>
+
+</head>
+<body>
+
+    <ul class="menu">
+        <li><a href="indexhome.html"><i class='bx bxs-home-alt-2'></i></a></li>
+        <li><a href="#">Transmites academicos</a></li>
+        <li><a href="#">Record de notas</a></li>
+        <li><a href="#">Plan de estudio</a></li>
+        <li><a href="#">Matricula</a></li>
+        <li><a href="indexhorario.html">Horario</a></li>
+        <li ><a href="indexnotasyasistencias.html">Notas</a></li>
+        <li><a href="indexconfiguracion.html">Configuracion</a></li>
+        <li><a href="#" onclick="mostrarNotificaciones()"><i class='bx bx-bell' ></i></a></li>
+        <li class="user"><a href="indexperfil.html"><i class='bx bxs-user' >NOMBRE</i></a></li>
+    </ul>
+
+    <div class="container">
+        <h2>Solicitud de Descuento Académico</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="tipoDescuento">Tipo de Descuento:</label>
+                <select id="tipoDescuento" name="tipoDescuento" required>
+                    <option value="" disabled selected>Selecciona el tipo de descuento</option>
+                    <option value="descuento-familiar">Descuento por hermanos</option>
+                    <option value="descuento-excelencia">Descuento por excelencia académica</option>
+                    <option value="descuento-deportivo">Descuento por mérito deportivo</option>
+                    <option value="descuento-financiero">Descuento por situación financiera</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="semestre">Semestre:</label>
+                <input type="text" id="semestre" name="semestre" value="2024-B" readonly>
+            </div>
+            <div class="form-group">
+                <label for="documentoDescuento">Cargar documento de respaldo (PDF o imagen):</label>
+                <input type="file" id="documentoDescuento" name="documentoDescuento" accept=".pdf, .jpg, .jpeg, .png" required>
+            </div>
+            <button type="submit">Solicitar Descuento</button>
+        </form>
+
+        <h2>Historial de Descuentos Solicitados</h2>
+
+        <p id="no-discounts-message" style="display: none;">No se encontraron descuentos.</p>
+        <table id="discounts-table">
+            <thead>
+                <tr>
+                    <th>Tipo de Descuento</th>
+                    <th>Semestre</th>
+                    <th>Documento</th>
+                    <th>Aprobado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--<tr>
+                    <td>Descuento por hermanos</td>
+                    <td>2024-I</td>
+                    <td><a href="#">Ver Documento</a></td>
+                    <td><span class="status-approved">Aprobado</span></td>
+                </tr>
+                <tr>
+                    <td>Descuento por situación financiera</td>
+                    <td>2023-II</td>
+                    <td><a href="#">Ver Documento</a></td>
+                    <td><span class="status-rejected">Rechazado</span></td>
+                </tr>
+                <tr>
+                    <td>Descuento por mérito deportivo</td>
+                    <td>2023-I</td>
+                    <td><a href="#">Ver Documento</a></td>
+                    <td><span class="status-approved">Aprobado</span></td>
+                </tr>-->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="panelNotificaciones" class="notificaciones">
+        <button class="close-btn" onclick="cerrarNotificaciones()">×</button>
+        <h3>Notificaciones</h3>
+        <div class="notificacion notificacion-importante">
+            <p><strong>Importante:</strong> Recuerda subir todos los documentos requeridos antes del 15 de octubre.</p>
+        </div>
+        <div class="notificacion notificacion-normal">
+            <p>Tu solicitud de descuento por excelencia académica ha sido aprobada.</p>
+        </div>
+        <div class="notificacion notificacion-alerta">
+            <p><strong>Alerta:</strong> La solicitud de descuento por situación financiera ha sido rechazada.</p>
+        </div>
+    </div>
+
+
+</body>
+<footer>
+    <div class="legal"></div>
+    <p>Universidad de Santander - Sistemas de información</p>
+    <p>Todos los derechos reservados © 2016</p>
+    <p>Institución de Educación Superior sujeta a la inspección y vigilancia del Ministerio de Educación Nacional  </p>
+</footer>
+
+<script src="descuentos.js"></script>
+
+<script>
+
+    function mostrarNotificaciones() {
+        var panel = document.getElementById('panelNotificaciones');
+        panel.classList.toggle('open');
+    }   
+
+    function cerrarNotificaciones() {
+        var panel = document.getElementById('panelNotificaciones');
+        panel.classList.remove('open');
+    }
+
+</script>
+
+</html>

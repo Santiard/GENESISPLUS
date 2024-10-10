@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENESIS-WEBAPP-HOME</title>
+    <link rel="stylesheet" href="styles/styleperfil.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <div class="banner">
+        <img src="IMAGENES/LOGOUDES.png" alt="">
+        <h1>GENESIS PLUS</h1>
+        <h3>Sistema de gestión de estudiantes</h3>
+        <h4>Cúcuta Semestre 2024B</h4>
+    </div>
+
+
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="indexhome.html"><i class='bx bxs-home-alt-2'></i></a></li>
+        <li><a href="#">Transmites academicos</a></li>
+        <li><a href="#">Record de notas</a></li>
+        <li><a href="#">Plan de estudio</a></li>
+        <li><a href="#">Matricula</a></li>
+        <li><a href="indexhorario.html">Horario</a></li>
+        <li><a href="indexnotasyasistencias.html">Notas</a></li>
+        <li><a href="indexconfiguracion.html">Configuracion</a></li>
+        <li><a href="#" onclick="mostrarNotificaciones()"><i class='bx bx-bell' ></i></a></li>
+        <li><a href="indexperfil.html"><i class='bx bxs-user' >NOMBRE</i></a></li>
+    </ul>
+
+    <div class="contenido">
+
+        <div class="perfil">
+           
+
+            <div class="datosresumen">
+                
+                <div class="imagen">
+                    <i class='bx bxs-user-circle'></i> 
+                </div>
+
+
+                <div class="contenido">
+                    <div class="columna-h5">
+                        <h5>Nombre:</h5>
+                        <h5>Carrera:</h5>
+                        <h5>Semestre:</h5>
+                        <h5>Codigo estudiantil:</h5>
+                        <h5>Documento:</h5>
+                        <h5>Promedio acumulado:</h5>
+                    </div>
+                    <div class="columna-p">
+                        <p>ooooooooooooooooooo</p>
+                        <p>ooooooooooooooooooo</p>
+                        <p>ooooooooooooooooooo</p>
+                        <p>ooooooooooooooooooo</p>
+                        <p>ooooooooooooooooooo</p>
+                        <p>ooooooooooooooooooo</p>
+                        <p>5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedorcuadros">
+                <div class="cuadrodatos">
+                    <h5>información Académica</h5>
+                    <table>
+                        <thead>
+                            <th>Concepto</th>
+                            <th>Valor</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Promedio</td>
+                                <td>3.88</td>
+                            </tr>
+                            <tr>
+                                <td>Semestre</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Activo académico</td>
+                                <td>SI</td>
+                            </tr>
+                        </tbody>
+            
+            
+                    </table>
+            
+            
+            
+                </div>
+                <div class="noticias">
+
+                    <table>
+                        <thead>
+                            <th>Noticias         0</th> 
+                        </thead>
+                        <tbody>
+                            <td>No hay noticias nuevas</td>
+            
+                            </tbody>
+                    </table>
+                </div>
+            </div> 
+
+            <div class="datos">
+                <div class="datospersonales">
+
+                
+                <div class="datosespecificos">
+                    <table border="1">
+                        <tr>
+                            <th>Email</th>
+                            <td>correo@gmail.com</td>
+                            <th>Email institucional</th>
+                            <td>correo@mail.udes.edu.co</td>
+                        </tr>
+                        <tr>
+                            <th>E.P.S</th>
+                            <td>FUNFACION MEDICO</td>
+                            <th>Tiene capacidad excepcional:</th>
+                            <td>NO APLICA</td>
+                            <th>Tiene discapacidad</th>
+                            <td>NO</td>
+                            <th>Tipo discapacidad</th>
+                            <td>NO REGISTRA</td>
+                        </tr>
+                        <tr>
+                            <th>Afectado por la violencia:</th>
+                            <td>NO</td>
+                            <th>Grupo étnico:</th>
+                            <td>NO REGISTRA</td>
+                            <th>Pueblo indigena:</th>
+                            <td>NO REGISTRA</td>
+                            <th>Comunidad negra:</th>
+                            <td>NO REGISTRA</td>
+                        </tr>
+                    </table>
+                
+
+                </div>
+
+            <div class="datoslaborales">
+                <table border="1">
+                <tr>
+                    <th>Empresa:</th>
+                    <td>N/A</td>
+                    <th>Cargo o profesión:</th>
+                    <td>N/A</td>
+                </tr>
+                    <tr>
+                        <th>Direccion:</th>
+                        <td>N/A</td>
+                        <th>Telefono:</th>
+                        <td>N/A</td>
+                    </tr>
+
+                </table>
+            </div>
+            
+
+                <div class="datosfamiliares">
+                    <button id="toggleButton" onclick="toggleTable()">Mostrar datos padre</button>
+                    <div class="datospadre">
+                        <table id="myTable" class="hidden">
+                        <tr>
+                            <th>Nombre:</th>
+                            <td>PAPA</td> 
+                            <th>Telefono:</th>
+                            <td>N/A</td> 
+                        </tr>
+                        <tr>
+                            <th>Lugar de vivienda:</th>
+                            <td>N/A</td> 
+                            <th>Dirección:</th>
+                            <td>N/A</td> 
+                        </tr>
+                        <tr>
+                            <th>Empresa:</th>
+                            <td>N/A</td> 
+                            <th>Cargo o profesión:</th>
+                            <td>N/A</td> 
+                        </tr>
+                        </table>
+                    </div>
+
+                    <button id="toggleButton" onclick="toggleTableMAMA()">Mostrar datos madre</button>
+                    <div class="datosmadre" >
+                        <table id="myTableMAMA" class="hidden">
+                        <tr>
+                            <th>Nombre:</th>
+                            <td>MAMA</td> 
+                            <th>Telefono:</th>
+                            <td>N/A</td> 
+                        </tr>
+                        <tr>
+                            <th>Lugar de vivienda:</th>
+                            <td>N/A</td> 
+                            <th>Dirección:</th>
+                            <td>N/A</td> 
+                        </tr>
+                        <tr>
+                            <th>Empresa:</th>
+                            <td>N/A</td> 
+                            <th>Cargo o profesión:</th>
+                            <td>N/A</td> 
+                        </tr>
+                        </table>
+                    </div>
+                    <button id="toggleButton" onclick="toggleTableACUDIENTE()">Mostrar datos acudiente</button>
+                    <div class="datosacudiente">
+                        <table id="myTableACUDIENTE" class="hidden">
+                        <tr>
+                            <th>Nombre:</th>
+                            <td>N/A</td> 
+                            <th>Telefono:</th>
+                            <td>N/A</td> 
+                        </tr>
+                        <tr>
+                            <th>Lugar de vivienda:</th>
+                            <td>N/A</td> 
+                            <th>Dirección:</th>
+                            <td>N/A</td> 
+                        </tr>
+                        <tr>
+                            <th>Empresa:</th>
+                            <td>N/A</td> 
+                            <th>Cargo o profesión:</th>
+                            <td>N/A</td> 
+                        </tr>
+                        </table>
+                    </div>
+            </div>
+            </div>
+            <div class="datosvivienda">
+                <table border="1">
+                    <tr>
+                        <th>Codigo:</th>
+                        <td>000000000</td>
+                        <th>Identificación:</th>
+                        <td>000000000</td>
+                        <th>Lugar de expedición</th>
+                        <td>Los patios</td>
+                        
+                    </tr>
+                    <tr>
+                        <th>Nombre:</th>
+                        <td>000000000</td>
+                        <th>Fecha de Nacimiento:</th>
+                        <td>000000000</td>
+                        <th>Lugar de Nacimiento</th>
+                        <td>Los patios</td>
+                        
+                    </tr>
+                    <tr>
+                        <th>Dirección:</th>
+                        <td>000000000</td>
+                        <th>Barrio:</th>
+                        <td>000000000</td>
+                        <th>Estrato</th>
+                        <td>Los patios</td>
+                        
+                    </tr>
+                    <tr>
+                        <th>Lugar de residencia:</th>
+                        <td>000000000</td>
+                        <th>Telefono:</th>
+                        <td>000000000</td>
+                        
+                        
+                    </tr>
+                    
+
+                </table>
+
+            </div>
+
+
+            
+            
+               
+        </div>
+
+
+    </div>
+
+    <div id="panelNotificaciones" class="notificaciones">
+        <button class="close-btn" onclick="cerrarNotificaciones()">×</button>
+        <h3>Notificaciones</h3>
+        <div class="notificacion notificacion-importante">
+            <p><strong>Importante:</strong> Recuerda subir todos los documentos requeridos antes del 15 de octubre.</p>
+        </div>
+        <div class="notificacion notificacion-normal">
+            <p>Tu solicitud de descuento por excelencia académica ha sido aprobada.</p>
+        </div>
+        <div class="notificacion notificacion-alerta">
+            <p><strong>Alerta:</strong> La solicitud de descuento por situación financiera ha sido rechazada.</p>
+        </div>
+    </div>
+
+    </div>        
+    <script>
+
+        function mostrarNotificaciones() {
+            var panel = document.getElementById('panelNotificaciones');
+            panel.classList.toggle('open');
+        }   
+        function cerrarNotificaciones() {
+            var panel = document.getElementById('panelNotificaciones');
+            panel.classList.remove('open');
+        }
+
+        function toggleTable() {
+            // Obtener la tabla y el botón
+            var table = document.getElementById("myTable");
+            var button = document.getElementById("toggleButton");
+
+            // Alternar la clase "hidden" para mostrar u ocultar la tabla
+            if (table.classList.contains("hidden")) {
+                table.classList.remove("hidden");
+                button.textContent = "Ocultar datos padre"; // Cambiar el texto del botón
+            } else {
+                table.classList.add("hidden");
+                button.textContent = "Mostrar datos padre"; // Cambiar el texto del botón
+            }
+        }
+    </script>
+    <script>
+        function toggleTableMAMA() {
+            // Obtener la tabla y el botón
+            var table = document.getElementById("myTableMAMA");
+            var button = document.getElementById("toggleButton");
+
+            // Alternar la clase "hidden" para mostrar u ocultar la tabla
+            if (table.classList.contains("hidden")) {
+                table.classList.remove("hidden");
+                button.textContent = "Ocultar datos madre"; // Cambiar el texto del botón
+            } else {
+                table.classList.add("hidden");
+                button.textContent = "Mostrar datos madre"; // Cambiar el texto del botón
+            }
+        }
+    </script>
+
+    <script>
+        function toggleTableACUDIENTE() {
+            // Obtener la tabla y el botón
+            var table = document.getElementById("myTableACUDIENTE");
+            var button = document.getElementById("toggleButton");
+
+            // Alternar la clase "hidden" para mostrar u ocultar la tabla
+            if (table.classList.contains("hidden")) {
+                table.classList.remove("hidden");
+                button.textContent = "Ocultar datos acudiente"; // Cambiar el texto del botón
+            } else {
+                table.classList.add("hidden");
+                button.textContent = "Mostrar datos acudiente"; // Cambiar el texto del botón
+            }
+        }
+    </script>
+
+
+</body>
+<footer>
+    <div class="legal">
+    <p>Universidad de Santander - Sistemas de información</p>
+    <p>Todos los derechos reservados © 2016</p>
+    <p>Institución de Educación Superior sujeta a la inspección y vigilancia del Ministerio de Educación Nacional  </p>
+    </div>
+</footer>
+</html>

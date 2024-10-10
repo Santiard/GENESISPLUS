@@ -1,0 +1,108 @@
+body{
+
+    margin:o;
+    padding:0;
+    font-family: Georgia ;
+    background-color:  #07488a ;
+}
+.formulariologin{
+ position: absolute;
+ top:50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 400px;
+ background-color: white;   
+ border-radius: 10px;
+}
+.banner{
+    text-align: center;
+    margin-top: 40PX;
+    color: white;
+}
+
+.formulariologin h1{
+
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.formulariologin form {
+
+padding: 0 40px;
+box-sizing: border-box;
+}
+
+form .username{
+    position: relative;
+    border-bottom: 30px  solid white;
+
+}
+
+.username input{
+    border: none;
+    border-bottom: #1b82ff;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 40px;    
+}
+.username label{
+    position: absolute;
+    top:20%;
+    left: 30%;
+    color: #adadad;
+}
+
+.contraseña label{
+    position: absolute;
+    top:20%;
+    left:35%;
+    color: #adadad;
+}
+
+form .contraseña{
+    position: relative;
+    border-bottom: 30px  solid white;
+    
+}
+.contraseña input{
+    border: none;
+    width: 100%;
+    padding: 0 5px;
+    height: 50px;
+    font-size: 40px;    
+}
+
+form div{
+    text-align: center;
+
+}
+form .iniciar{
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.iniciar input {
+    text-align: center;
+    width: 300px;
+    height:50px;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: #eaeaea;
+}
+
+.username label:hover{
+    visibility: hidden;
+}
+
+.contraseña label:hover{
+    visibility: hidden;
+}
+
+.iniciar input:hover{
+    background-color: #1b82ff;
+
+}
+
+

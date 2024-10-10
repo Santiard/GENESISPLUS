@@ -1,0 +1,169 @@
+.banner {
+    background-color: #e3e3e3 ;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin-bottom:10px ;
+    border-radius: 5px;
+}
+.banner img {
+    position: absolute;
+    display: block;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: auto;
+    width: 20%;
+}
+
+.banner h1, h3,h4{
+    text-align: right;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+
+    text-align: center;
+    background-color: #f1ecec ;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.menu li{
+    
+    padding-left: 10px;
+    display: inline-block;
+    
+    margin-right: 10px; 
+    padding-top: 10px;
+    padding-bottom: 10px
+    
+}
+
+.menu a{
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+.container {
+    
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+.module {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #07488a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #053361;
+}
+
+.notificaciones {
+    position: fixed; 
+    top: 0;
+    right: -400px; /* Fuera de la pantalla al inicio */
+    width: 300px;
+    height: 100%; /* Ocupará toda la altura de la pantalla */
+    background-color: #e6e6e6;
+    
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 1000; 
+}
+.notificaciones h3 {
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.notificacion {
+    background-color: #444;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.notificacion-importante {
+    background-color: #07488a;
+    color: white;
+}
+.notificacion-normal {
+    background-color: white;
+    
+}
+.notificacion-alerta {
+    background-color: #f44336;
+    color: white;
+}
+.open {
+    right: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #07488a; /* Cambiar color al pasar el mouse */
+}
+
+footer{
+    color: white;
+    background-color: #07488a;
+    text-align: center;
+    width: 100%;
+    margin-top: 6%;
+    border-radius: 5px;
+    
+}

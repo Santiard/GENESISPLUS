@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stylenotasyasistencias.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Notas y Asistencias del Alumno</title>
+    
+
+    <div class="banner"></div>
+        <img src="IMAGENES/LOGOUDES.png" alt="">
+        <h1>GENESIS PLUS</h1>
+        <h3>Sistema de gestión de estudiantes</h3>
+        <h4>Cúcuta Semestre 2024B</h4>
+    </div>
+
+
+</head>
+<body>
+
+    <ul class="menu">
+        <li><a href="indexhome.html"><i class='bx bxs-home-alt-2'></i></a></li>
+        <li><a href="#">Transmites academicos</a></li>
+        <li><a href="#">Record de notas</a></li>
+        <li><a href="#">Plan de estudio</a></li>
+        <li><a href="#">Matricula</a></li>
+        <li><a href="indexhorario.html">Horario</a></li>
+        <li ><a href="indexnotasyasistencias.html">Notas</a></li>
+        <li><a href="indexconfiguracion.html">Configuracion</a></li>
+        <li><a href="#" onclick="mostrarNotificaciones()"><i class='bx bx-bell' ></i></a></li>
+        <li class="user"><a href="indexperfil.html"><i class='bx bxs-user' >NOMBRE</i></a></li>
+    </ul>
+
+
+
+    <div class="container">
+        <h1>Historial de Notas y Asistencias</h1>
+
+        <div class="alumno-info">
+            <h2>Alumno: Jesús Santiago Ardila Gómez</h2>
+            <p>Código: 123456</p>
+        </div>
+
+        <h3>Notas y Asistencias por Corte</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Grupo</th>
+                    <th>Materia</th>
+                    <th>Semestre</th>
+                    <th>Creditos</th>
+                    <th>Inasistencias</th>
+                    <th>Corte 1</th>
+                    <th>Corte 2</th>
+                    <th>Corte 3</th>
+                    <th>Acumulado</th>
+                    <th>Habilitacion</th>  
+                    <th>Definitiva Final</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>13182 - P</td>
+                    <td>METODOS NUMERICOS</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3.4</td>
+                    <td></td>
+                    <td></td>
+                    <td>1.02</td>
+                    <td></td>
+                    <td></td>
+                    
+                </tr>
+                <tr>
+                    <td>13182 - P</td>
+                    <td>METODOS NUMERICOS</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3.4</td>
+                    <td></td>
+                    <td></td>
+                    <td>1.02</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13182 - P</td>
+                    <td>METODOS NUMERICOS</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3.4</td>
+                    <td></td>
+                    <td></td>
+                    <td>1.02</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13182 - P</td>
+                    <td>METODOS NUMERICOS</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3.4</td>
+                    <td></td>
+                    <td></td>
+                    <td>1.02</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13182 - P</td>
+                    <td>METODOS NUMERICOS</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3.4</td>
+                    <td></td>
+                    <td></td>
+                    <td>1.02</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13182 - P</td>
+                    <td>METODOS NUMERICOS</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3.4</td>
+                    <td></td>
+                    <td></td>
+                    <td>1.02</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13182 - P</td>
+                    <td>METODOS NUMERICOS</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3.4</td>
+                    <td></td>
+                    <td></td>
+                    <td>1.02</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13182 - P</td>
+                    <td>METODOS NUMERICOS</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3.4</td>
+                    <td></td>
+                    <td></td>
+                    <td>1.02</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+        <div class="nota-acumulada">
+            <h3>Nota Acumulada: <span id="notaAcumulada">0.00</span></h3>
+        </div>
+    </div>
+
+    <div id="panelNotificaciones" class="notificaciones">
+        <button class="close-btn" onclick="cerrarNotificaciones()">×</button>
+        <h3>Notificaciones</h3>
+        <div class="notificacion notificacion-importante">
+            <p><strong>Importante:</strong> Recuerda subir todos los documentos requeridos antes del 15 de octubre.</p>
+        </div>
+        <div class="notificacion notificacion-normal">
+            <p>Tu solicitud de descuento por excelencia académica ha sido aprobada.</p>
+        </div>
+        <div class="notificacion notificacion-alerta">
+            <p><strong>Alerta:</strong> La solicitud de descuento por situación financiera ha sido rechazada.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="legal"></div>
+        <p>Universidad de Santander - Sistemas de información</p>
+        <p>Todos los derechos reservados © 2016</p>
+        <p>Institución de Educación Superior sujeta a la inspección y vigilancia del Ministerio de Educación Nacional  </p>
+    </footer>
+
+
+
+    
+</body>
+
+<script>
+    function mostrarNotificaciones() {
+        var panel = document.getElementById('panelNotificaciones');
+        panel.classList.toggle('open');
+    }   
+    function cerrarNotificaciones() {
+        var panel = document.getElementById('panelNotificaciones');
+        panel.classList.remove('open');
+    }
+</script>
+
+</html>

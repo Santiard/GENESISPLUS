@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stylepagos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Historial de Pagos</title>
+    
+    <div class="banner">
+        <img src="IMAGENES/LOGOUDES.png" alt="">
+        <h1>GENESIS PLUS</h1>
+        <h3>Sistema de gestión de estudiantes</h3>
+        <h4>Cúcuta Semestre 2024B</h4>
+        </div>
+
+</head>
+<body>
+
+    <ul class="menu">
+        <li><a href="indexhome.html"><i class='bx bxs-home-alt-2'></i></a></li>
+        <li><a href="#">Transmites academicos</a></li>
+        <li><a href="#">Record de notas</a></li>
+        <li><a href="#">Plan de estudio</a></li>
+        <li><a href="#">Matricula</a></li>
+        <li><a href="indexhorario.html">Horario</a></li>
+        <li ><a href="indexnotasyasistencias.html">Notas</a></li>
+        <li><a href="indexconfiguracion.html">Configuracion</a></li>
+        <li><a href="#" onclick="mostrarNotificaciones()"><i class='bx bx-bell' ></i></a></li>
+        <li class="user"><a href="indexperfil.html"><i class='bx bxs-user' >NOMBRE</i></a></li>
+    </ul>
+
+
+    <div class="container">
+        <h2>Historial de Pagos</h2>
+
+       
+        <div class="pagos">
+            <h3>Pagos Pendientes</h3>
+            <ul id="pagosPendientes">
+                <li class="pendiente">
+                    <span class="label">Factura #123</span>
+                    <span>Monto: $100.00</span>
+                    <span>Fecha límite: 2024-10-10</span>
+                </li>
+                <li class="pendiente">
+                    <span class="label">Factura #124</span>
+                    <span>Monto: $250.00</span>
+                    <span>Fecha límite: 2024-11-15</span>
+                </li>
+            </ul>
+
+            <button class="boton-pagar" onclick="abrirRealizarPago()">Realizar Pago</button>
+
+        </div>
+
+     
+        <div class="pagos">
+            <h3>Pagos Realizados</h3>
+            <ul id="pagosRealizados">
+                <li class="realizado">
+                    <span class="label">Factura #120</span>
+                    <span>Monto: $150.00</span>
+                    <span>Fecha de pago: 2024-09-15</span>
+                </li>
+                <li class="realizado">
+                    <span class="label">Factura #121</span>
+                    <span>Monto: $200.00</span>
+                    <span>Fecha de pago: 2024-09-20</span>
+                </li>
+            </ul>
+        </div>
+    
+
+        <button class="boton-agregar" onclick="abrirAgregarMedioPago()">Agregar Medio de Pago</button>
+    </div>
+
+    <div id="panelNotificaciones" class="notificaciones">
+        <button class="close-btn" onclick="cerrarNotificaciones()">×</button>
+        <h3>Notificaciones</h3>
+        <div class="notificacion notificacion-importante">
+            <p><strong>Importante:</strong> Recuerda subir todos los documentos requeridos antes del 15 de octubre.</p>
+        </div>
+        <div class="notificacion notificacion-normal">
+            <p>Tu solicitud de descuento por excelencia académica ha sido aprobada.</p>
+        </div>
+        <div class="notificacion notificacion-alerta">
+            <p><strong>Alerta:</strong> La solicitud de descuento por situación financiera ha sido rechazada.</p>
+        </div>
+    </div>
+
+
+
+</body>
+<script>
+    // Función para redirigir a la página de agregar medios de pago
+    function abrirAgregarMedioPago() {
+        window.location.href = "indexagregarpago.html";
+    }
+
+    function abrirRealizarPago(){
+
+        
+    }
+
+    function mostrarNotificaciones() {
+        var panel = document.getElementById('panelNotificaciones');
+        panel.classList.toggle('open');
+    }   
+    function cerrarNotificaciones() {
+        var panel = document.getElementById('panelNotificaciones');
+        panel.classList.remove('open');
+    }
+</script>
+
+<footer>
+    <div class="legal"></div>
+    <p>Universidad de Santander - Sistemas de información</p>
+    <p>Todos los derechos reservados © 2016</p>
+    <p>Institución de Educación Superior sujeta a la inspección y vigilancia del Ministerio de Educación Nacional  </p>
+</footer>
+
+
+</html>
